@@ -4296,6 +4296,10 @@ react-lifecycles-compat@^3, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
+react-native-android-permissions@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-android-permissions/-/react-native-android-permissions-1.0.2.tgz#97c0d2e7bd990e0ca1b976f2d8af8bf7ea68320e"
+
 react-native-contacts@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/react-native-contacts/-/react-native-contacts-2.2.0.tgz#9a1a10d36f492728f6317a7f785809bf6ee49229"

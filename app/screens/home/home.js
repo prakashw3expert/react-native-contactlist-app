@@ -63,6 +63,7 @@ class Invite extends Component {
   }
   componentDidMount() {
     Permissions.check('contacts').then(response => {
+			console.log('REEE: ', response);
       if(response === 'authorized') {
         this.getContacts().then(() => {
             this.setState({ contactPermission: response })

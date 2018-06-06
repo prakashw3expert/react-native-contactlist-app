@@ -7,14 +7,15 @@
     "test": "jest"
   },
   "rnpm": {
-		"assets": [
-			"./app/resources/fonts"
-		]
-	},
+    "assets": [
+      "./app/resources/fonts"
+    ]
+  },
   "dependencies": {
     "native-base": "^2.4.5",
     "react": "16.3.1",
     "react-native": "0.55.4",
+    "react-native-android-permissions": "^1.0.2",
     "react-native-contacts": "^2.2.0",
     "react-native-permissions": "^1.1.1",
     "react-native-phone-input": "^0.2.1",
