@@ -29,6 +29,7 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  [[UITextField appearance] setTintColor:[UIColor colorWithRed:206.0/255.0 green:212.0/255.0 blue:218.0/255.0 alpha:1]];
   return YES;
 }
 

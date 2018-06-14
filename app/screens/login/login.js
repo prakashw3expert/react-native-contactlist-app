@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, TextInput, Platform, Keyboard, TouchableOpacity } from 'react-native';
 import { Content, Item, Button } from 'native-base';
 import PhoneInput from 'react-native-phone-input';
-
+import { Fonts, Metrics } from '../../themes/'
 import styles from'./login.styles.js'
 
 class Login extends Component {
@@ -11,9 +11,11 @@ class Login extends Component {
 		this.state = {
       phoneNumber: '',
       isPhoneSelected: true,
-      email: ''
+      email: '',
+			contryCodeItemWidth: 80
 		};
 		this.submitEmail = this.submitEmail.bind(this);
+		this.onSelectCountry = this.onSelectCountry.bind(this);
 	}
 
   handleSubmit() {
@@ -39,6 +41,15 @@ class Login extends Component {
 		}
 	}
 
+	onSelectCountry(iso2) {
+		var countryCode = this.phone.getCountryCode()
+		if(countryCode.length > 2) {
+			this.setState({ contryCodeItemWidth: 100})
+		} else {
+			this.setState({ contryCodeItemWidth: 80})
+		}
+	}
+
   renderInput() {
     if(this.state.isPhoneSelected) {
       return(
@@ -47,16 +58,29 @@ class Login extends Component {
             ref={(ref) => {
               this.phone = ref;
             }}
-            textStyle={{ paddingBottom: (Platform.OS === 'ios') ? 0 : 3 }}
+						// disabled
+            textStyle={{ paddingBottom: (Platform.OS === 'ios') ? 0 : 3, color:'#319AF8' }}
             initialCountry='us' //in
-            textProps={{ editable: false }}
+            textProps={{
+							editable: false,
+							// color:'#319AF8',
+							fontSize: Metrics.screenWidth * 0.042,
+							fontFamily: Fonts.type.medium,
+							marginTop:3,
+							height:45
+						}}
+						offset={5}
+						isoStyle={{ fontSize: Metrics.screenWidth * 0.042, fontFamily: Fonts.type.medium, color:'#319AF8', }}
             pickerButtonColor='rgb(70,70,70)'
-            style={{ paddingLeft:0, width:100, paddingTop:-1 }}
+            style={{ paddingLeft:0, width:this.state.contryCodeItemWidth, paddingTop:-1 }}
+						onSelectCountry={this.onSelectCountry}
           />
+
+					<View style={[styles.separatorStyle, { left: this.state.contryCodeItemWidth - 20}]} />
 
           <TextInput
 						ref={(ref) => this.phoneInput = ref }
-            style={{ paddingBottom: (Platform.OS === 'ios') ? 0 : 10, width:'100%', paddingLeft:0, fontSize:14 }}
+            style={[styles.phoneTextInput, { paddingBottom: (Platform.OS === 'ios') ? 0 : 10 }]}
             placeholder=''
             //placeholderTextColor={[Fonts.colors.input]}
             maxLength={10}
@@ -72,7 +96,7 @@ class Login extends Component {
         <Item style={styles.itemStyle}>
           <TextInput
 						ref={(ref) => this.emailInput = ref }
-            style={{ paddingBottom: (Platform.OS === 'ios') ? 0 : 10, width:'100%', paddingLeft:0 }}
+            style={{ paddingBottom: (Platform.OS === 'ios') ? 0 : 10, width:'100%', paddingLeft:0, textAlign:'center' }}
             placeholder=''
             keyboardType='email-address'
             returnKeyType={'go'}
@@ -91,13 +115,14 @@ class Login extends Component {
 	render() {
     let disabled = this.state.phoneNumber.length < 10
     let verificationType = (this.state.isPhoneSelected) ? 'SMS' : 'EMAIL'
+		let btnStyle = (disabled) ? [styles.btnContinue, { backgroundColor: '#B9C0C7' }] : styles.btnContinue
     return (
 			<View style={{flex:1, backgroundColor:'#fff'}}>
       <Content contentContainerStyle={styles.container} bounces={false}>
         <Text style={styles.topTitle}>
           {(this.state.isPhoneSelected) ? `What's your mobile number?` : `What’s your email?`}
         </Text>
-        <TouchableOpacity style={{ alignSelf:'center', marginBottom:50 }} onPress={() => this.toggleButton()}>
+        <TouchableOpacity style={styles.linkButton} onPress={() => this.toggleButton()}>
           <Text style={styles.link}>
             {(this.state.isPhoneSelected) ? 'Use email instead' : 'Use phone instead'}
           </Text>
@@ -110,7 +135,7 @@ class Login extends Component {
             {`We'll send you an ${verificationType} verification code`}
           </Text>
         </Item>
-        {(this.state.isPhoneSelected) && <Button disabled={disabled} style={styles.btnContinue} onPress={() => this.handleSubmit()}>
+        {(this.state.isPhoneSelected) && <Button disabled={disabled} style={btnStyle} onPress={() => this.handleSubmit()}>
           <Text style={styles.txtContinue}>Continue</Text>
         </Button>}
       </Content>

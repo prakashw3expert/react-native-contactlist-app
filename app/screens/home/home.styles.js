@@ -27,7 +27,7 @@ export default StyleSheet.create({
     borderLeftWidth: 0,
     borderTopColor: 'transparent',
     borderRightColor: 'transparent',
-    borderBottomColor: '#2C3137',
+    borderBottomColor: '#707070',
     borderLeftColor: 'transparent'
   },
   btnAccess: {
@@ -50,7 +50,7 @@ export default StyleSheet.create({
   },
   listItem: {
     flex: 1,
-    height: Metrics.screenHeight * 0.085457,
+    height: Metrics.screenHeight * 0.104,
     borderWidth: 0,
     borderColor: 'transparent',
     marginLeft: 0,
@@ -74,9 +74,9 @@ export default StyleSheet.create({
 		backgroundColor: 'transparent'
 	},
 	userImage: {
-		height: Metrics.screenWidth * 0.106,
-		width: Metrics.screenWidth * 0.106,
-		borderRadius: Metrics.screenWidth * 0.053
+		height: Metrics.screenWidth * 0.12,
+		width: Metrics.screenWidth * 0.12,
+		borderRadius: Metrics.screenWidth * 0.06
 	},
 	listName: {
 		color:'#1A1E21',
@@ -98,7 +98,7 @@ export default StyleSheet.create({
 	},
 	btnInvite: {
 		height: Metrics.screenHeight * 0.044,
-		width: Metrics.screenWidth * 0.213,
+		width: Metrics.screenWidth * 0.19,
 		justifyContent: 'center',
 		borderColor: '#B7BEC5'
 	},

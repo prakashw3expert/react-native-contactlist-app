@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, Dimensions, ActivityIndicator, FlatList, Image, Alert } from 'react-native';
 import { Container, Header, Left, Body, Right, Button, Icon, Title, Input, ListItem, Item } from 'native-base';
 import styles from'./home.styles.js'
-import ScrollableTabView, { ScrollableTabBar } from 'react-native-scrollable-tab-view';
+import ScrollableTabView, { DefaultTabBar } from 'react-native-scrollable-tab-view';
 const { width, height } = Dimensions.get('window')
 import Permissions from 'react-native-permissions'
 var Contacts = require('react-native-contacts')
@@ -19,7 +19,7 @@ class Home extends Component {
 	render() {
     return (
       <View style={styles.container}>
-      <Header style={{backgroundColor:'#fff'}}>
+      <Header style={{backgroundColor:'#fff', borderBottomWidth:0.2, borderBottomColor: '#EFEDED'}}>
         <Left style={{flex: 0.2}}>
           <Button transparent onPress={() => this.props.navigation.goBack()}>
             <Icon name='arrow-back' style={{color:'#2C3137'}} />
@@ -30,19 +30,23 @@ class Home extends Component {
 						<Icon active name='search' style={styles.searchIconStyle} />
 						<Input
 	            placeholder='Search'
+							placeholderTextColor='#717171'
 	            style={styles.inputStyle}
 	            />
 					</Item>
         </Body>
       </Header>
       <ScrollableTabView
-        style={{borderWidth: 0}}
+        //style={{borderWidth: 0}}
+				tabBarStyle={{borderWidth:0, height:40}}
+				tabBarTabStyle={{paddingBottom:0}}
         scrollWithoutAnimation={false}
         tabBarActiveTextColor={'#2C3137'}
-        tabBarInactiveTextColor={'#b7b6b1'}
+        tabBarInactiveTextColor={'#B7BEC5'}
         tabBarUnderlineStyle={styles.tabBorder}
         tabBarBackgroundColor={'white'}
-        tabBarTextStyle={styles.tabBarTextStyle} >
+        tabBarTextStyle={styles.tabBarTextStyle}
+				renderTabBar={() => <DefaultTabBar style={{ borderBottomWidth:0.2, borderBottomColor: '#EFEDED' }} />} >
 	        <Text tabLabel="Tab 1" />
 	        <Text tabLabel="Tab 2" />
 	        <Invite tabLabel="Invite" />
@@ -112,7 +116,7 @@ class Invite extends Component {
 
   renderItem({ item, index }) {
     return <ListItem key={index} style={styles.listItem}>
-        <Left style={{ flex: 0.9, borderWidth: 0 }}>
+        <Left style={{ flex: 1.2, borderWidth: 0 }}>
             <Image source={(item.hasThumbnail) ? { uri: item.thumbnailPath } : Images.defaultUserImage} style={styles.userImage} />
         </Left>
         <Body style={{ flex: 4.1, borderWidth: 0 }}>
