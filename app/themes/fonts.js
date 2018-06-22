@@ -1,7 +1,12 @@
 const type = {
+	light: 'Avenir-Light',
 	heavy: 'Avenir-Heavy',
 	medium: 'Avenir-Medium',
-	book: 'Avenir-Book'
+	book: 'Avenir-Book',
+	displayRegular: 'SanFranciscoDisplay-Regular',
+	SFTextSemibold: 'SanFranciscoText-Semibold',
+	SFTextMedium: 'SanFranciscoText-Medium',
+	SFTextRegular: 'SanFranciscoText-Regular'
 }
 
 const size = {

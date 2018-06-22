@@ -98,7 +98,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.rnsampleproject"
+        applicationId "com.phoneshake"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1
@@ -148,6 +148,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-android-permissions')
     compile project(':react-native-contacts')
     compile project(':RNPermissionsModule')
     compile fileTree(dir: "libs", include: ["*.jar"])

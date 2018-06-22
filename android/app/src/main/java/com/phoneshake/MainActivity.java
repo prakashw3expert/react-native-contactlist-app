@@ -1,6 +1,7 @@
-package com.rnsampleproject;
+package com.phoneshake;
 
 import com.facebook.react.ReactActivity;
+import com.burnweb.rnpermissions.RNPermissionsPackage;
 import com.burnweb.rnpermissions.RNPermissionsPackage;
 
 public class MainActivity extends ReactActivity {
@@ -16,6 +17,6 @@ public class MainActivity extends ReactActivity {
     }
     @Override
     protected String getMainComponentName() {
-        return "RNSampleProject";
+        return "PhoneShake";
     }
 }

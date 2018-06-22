@@ -1,4 +1,4 @@
-package com.rnsampleproject;
+package com.phoneshake;
 
 import android.app.Application;
 

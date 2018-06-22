@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -41,6 +40,11 @@
 		DE6AFAC5F5B746F693A45C2E /* libReactNativePermissions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F540F3E68F5B4175B7A75383 /* libReactNativePermissions.a */; };
 		E2305F75B5C24CFD8DCA53BE /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B073A8A7A0B4CC2B65AFF40 /* SimpleLineIcons.ttf */; };
 		F94461BF47014239B8241D56 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFE39B62D5CF4C27890D838B /* Zocial.ttf */; };
+		A5C2C9BF4BCC44628BB09C52 /* Avenir-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3F5D68D5DF543D9906D906A /* Avenir-Light.ttf */; };
+		575EDF4DB95C48A2BE8F1726 /* SanFranciscoDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7F75F14F8874401981253FF /* SanFranciscoDisplay-Regular.otf */; };
+		03211FEDCB424D8F8E1BD899 /* SanFranciscoText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB57FEC7E0B94A84BD78D1AD /* SanFranciscoText-Medium.otf */; };
+		F19D65F2A1CC46DBAF045898 /* SanFranciscoText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D988390D67A4D9997E395D8 /* SanFranciscoText-Regular.otf */; };
+		72425F843EA04F6685C707A2 /* SanFranciscoText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE65A230348A4A4E9A142987 /* SanFranciscoText-Semibold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -327,17 +331,17 @@
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* RNSampleProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNSampleProjectTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* PhoneShakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneShakeTests.m; sourceTree = "<group>"; };
 		02D07ABC8E6D41B5ADE34C9B /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* RNSampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNSampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RNSampleProject/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RNSampleProject/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* PhoneShake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneShake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PhoneShake/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PhoneShake/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RNSampleProject/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNSampleProject/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNSampleProject/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PhoneShake/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PhoneShake/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PhoneShake/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		1F2BB79A02624C36BBF17AD2 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -363,6 +367,11 @@
 		E77CC20F7D3641499A02CE60 /* ReactNativePermissions.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativePermissions.xcodeproj; path = "../node_modules/react-native-permissions/ios/ReactNativePermissions.xcodeproj"; sourceTree = "<group>"; };
 		EDD4AA3960CF4863843209AE /* Avenir-Book.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Book.ttf"; path = "../app/resources/fonts/Avenir-Book.ttf"; sourceTree = "<group>"; };
 		F540F3E68F5B4175B7A75383 /* libReactNativePermissions.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativePermissions.a; sourceTree = "<group>"; };
+		A3F5D68D5DF543D9906D906A /* Avenir-Light.ttf */ = {isa = PBXFileReference; name = "Avenir-Light.ttf"; path = "../app/resources/fonts/Avenir-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E7F75F14F8874401981253FF /* SanFranciscoDisplay-Regular.otf */ = {isa = PBXFileReference; name = "SanFranciscoDisplay-Regular.otf"; path = "../app/resources/fonts/SanFranciscoDisplay-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EB57FEC7E0B94A84BD78D1AD /* SanFranciscoText-Medium.otf */ = {isa = PBXFileReference; name = "SanFranciscoText-Medium.otf"; path = "../app/resources/fonts/SanFranciscoText-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2D988390D67A4D9997E395D8 /* SanFranciscoText-Regular.otf */ = {isa = PBXFileReference; name = "SanFranciscoText-Regular.otf"; path = "../app/resources/fonts/SanFranciscoText-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DE65A230348A4A4E9A142987 /* SanFranciscoText-Semibold.otf */ = {isa = PBXFileReference; name = "SanFranciscoText-Semibold.otf"; path = "../app/resources/fonts/SanFranciscoText-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,13 +442,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* RNSampleProjectTests */ = {
+		00E356EF1AD99517003FC87E /* PhoneShakeTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* RNSampleProjectTests.m */,
+				00E356F21AD99517003FC87E /* PhoneShakeTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = RNSampleProjectTests;
+			path = PhoneShakeTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -470,7 +479,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* RNSampleProject */ = {
+		13B07FAE1A68108700A75B9A /* PhoneShake */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -481,7 +490,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = RNSampleProject;
+			name = PhoneShake;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -591,9 +600,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* RNSampleProject */,
+				13B07FAE1A68108700A75B9A /* PhoneShake */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* RNSampleProjectTests */,
+				00E356EF1AD99517003FC87E /* PhoneShakeTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				C06A595BAC364AF693A99C47 /* Resources */,
@@ -607,7 +616,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* RNSampleProject.app */,
+				13B07F961A680F5B00A75B9A /* PhoneShake.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -640,6 +649,11 @@
 				A234C3DABB0A44D4AAB287C8 /* Avenir-Medium.ttf */,
 				6E81533D7BFB4F16AB2332FE /* OFL.txt */,
 				EDD4AA3960CF4863843209AE /* Avenir-Book.ttf */,
+				A3F5D68D5DF543D9906D906A /* Avenir-Light.ttf */,
+				E7F75F14F8874401981253FF /* SanFranciscoDisplay-Regular.otf */,
+				EB57FEC7E0B94A84BD78D1AD /* SanFranciscoText-Medium.otf */,
+				2D988390D67A4D9997E395D8 /* SanFranciscoText-Regular.otf */,
+				DE65A230348A4A4E9A142987 /* SanFranciscoText-Semibold.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -647,9 +661,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* RNSampleProject */ = {
+		13B07F861A680F5B00A75B9A /* PhoneShake */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNSampleProject" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "PhoneShake" */;
 			buildPhases = (
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -660,9 +674,9 @@
 			);
 			dependencies = (
 			);
-			name = RNSampleProject;
+			name = PhoneShake;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* RNSampleProject.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* PhoneShake.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -676,10 +690,11 @@
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 24M93NUAZL;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RNSampleProject" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "PhoneShake" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -750,7 +765,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* RNSampleProject */,
+				13B07F861A680F5B00A75B9A /* PhoneShake */,
 			);
 		};
 /* End PBXProject section */
@@ -1054,6 +1069,11 @@
 				527DA52316B0462C835374C6 /* Avenir-Medium.ttf in Resources */,
 				8E51D14787C349EF902856A4 /* OFL.txt in Resources */,
 				69881A7CC16F4AB7A0394A40 /* Avenir-Book.ttf in Resources */,
+				A5C2C9BF4BCC44628BB09C52 /* Avenir-Light.ttf in Resources */,
+				575EDF4DB95C48A2BE8F1726 /* SanFranciscoDisplay-Regular.otf in Resources */,
+				03211FEDCB424D8F8E1BD899 /* SanFranciscoText-Medium.otf in Resources */,
+				F19D65F2A1CC46DBAF045898 /* SanFranciscoText-Regular.otf in Resources */,
+				72425F843EA04F6685C707A2 /* SanFranciscoText-Semibold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1095,7 +1115,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = RNSampleProject;
+			path = PhoneShake;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1105,6 +1125,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 24M93NUAZL;
@@ -1113,15 +1135,16 @@
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
 				);
-				INFOPLIST_FILE = RNSampleProject/Info.plist;
+				INFOPLIST_FILE = PhoneShake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ample.RNSampleProject;
-				PRODUCT_NAME = RNSampleProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ample.PhoneShake;
+				PRODUCT_NAME = PhoneShake;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1130,6 +1153,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 24M93NUAZL;
 				HEADER_SEARCH_PATHS = (
@@ -1137,15 +1162,16 @@
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
 				);
-				INFOPLIST_FILE = RNSampleProject/Info.plist;
+				INFOPLIST_FILE = PhoneShake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ample.RNSampleProject;
-				PRODUCT_NAME = RNSampleProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ample.PhoneShake;
+				PRODUCT_NAME = PhoneShake;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1229,7 +1255,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNSampleProject" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "PhoneShake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1238,7 +1264,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RNSampleProject" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "PhoneShake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

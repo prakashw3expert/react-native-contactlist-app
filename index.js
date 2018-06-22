@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './app/screens/login/login.stack.js';
+import App from './app/app.js';
 
-AppRegistry.registerComponent('RNSampleProject', () => App);
+AppRegistry.registerComponent('PhoneShake', () => App);

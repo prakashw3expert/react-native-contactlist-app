@@ -2,8 +2,15 @@ import React, { Component } from 'react'
 import { StackNavigator } from 'react-navigation'
 import LoginScreen from './login.js'
 import Home from '../home/home.js'
+import Landing from '../landing/landing.js'
 
 const AuthStack = StackNavigator({
+  LandingScreen: {
+  	screen: Landing,
+  	navigationOptions: {
+  		title: 'Landing'
+  	}
+  },
   LoginScreen: {
   	screen: LoginScreen,
   	navigationOptions: {
@@ -18,7 +25,7 @@ const AuthStack = StackNavigator({
   }
   }, {
   headerMode: 'none',
-  initialRouteName:'LoginScreen',
+  initialRouteName:'LandingScreen',
   navigationOptions: { }
 });
 
