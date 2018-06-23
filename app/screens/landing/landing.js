@@ -10,10 +10,11 @@ class Landing extends Component {
 		this.state = {
 
 		};
+		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
   handleSubmit() {
-    //this.props.navigation.navigate('HomeScreen')
+    this.props.navigation.navigate('LoginScreen')
   }
 
 	render() {
@@ -23,9 +24,9 @@ class Landing extends Component {
         <Text style={styles.title}>
           Welcome to PhoneShake
         </Text>
-        <Button style={styles.btnContinue} onPress={() => this.handleSubmit()}>
+        <Button style={styles.btnContinue} onPress={this.handleSubmit}>
           <Text style={styles.txtContinue}>Get Started</Text>
-        </Button>}
+        </Button>
       </Content>
 		</View>
     );

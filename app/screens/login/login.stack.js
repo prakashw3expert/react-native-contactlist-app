@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
-import { StackNavigator } from 'react-navigation'
-import LoginScreen from './login.js'
-import Home from '../home/home.js'
+import { YellowBox } from 'react-native';
+YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
+import { createStackNavigator } from 'react-navigation'
 import Landing from '../landing/landing.js'
+import LoginScreen from './login.js'
+import Verification from './verifyOtp/verifyOtp.js'
+import Home from '../home/home.js'
+import OnboardStack from '../onboard/onboard.stack.js'
 
-const AuthStack = StackNavigator({
+const AuthStack = createStackNavigator({
   LandingScreen: {
   	screen: Landing,
   	navigationOptions: {
@@ -17,10 +21,16 @@ const AuthStack = StackNavigator({
   		title: 'Login'
   	}
   },
-  HomeScreen: {
-  	screen: Home,
+  Verification: {
+  	screen: Verification,
   	navigationOptions: {
-  		title: 'Home'
+  		title: 'Verification'
+  	}
+  },
+  OnboardStack: {
+  	screen: OnboardStack,
+  	navigationOptions: {
+  		title: 'OnboardStack'
   	}
   }
   }, {

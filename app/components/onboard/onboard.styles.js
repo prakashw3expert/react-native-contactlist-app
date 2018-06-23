@@ -4,7 +4,7 @@ import { Fonts, Metrics, Colors } from '../../themes/'
 export default StyleSheet.create({
 	container: {
 		flex: 1,
-    paddingTop: Metrics.screenHeight * 0.11,
+    paddingTop: Metrics.screenHeight * 0.015,
 		alignItems: 'center',
 		backgroundColor: '#fff',
 	},
@@ -13,11 +13,6 @@ export default StyleSheet.create({
     textAlign: 'center',
     paddingBottom: 20,
 		fontFamily: Fonts.type.SFTextMedium
-  },
-  link: {
-    fontSize: Metrics.screenWidth * 0.037,
-    color: Colors.blueTheme,
-		fontFamily: Fonts.type.SFTextRegular
   },
   infoText: {
 		marginTop: 7,
@@ -31,22 +26,17 @@ export default StyleSheet.create({
 		height: (Platform.OS === 'ios') ? Metrics.screenHeight * 0.052: Metrics.screenHeight * 0.07,
 		borderBottomWidth: 0.6,
 		borderBottomColor: 'rgba(0, 0, 0, 0.2)',
-		paddingHorizontal: 15
+		paddingHorizontal: 15,
+		marginTop: 55
 	},
 	linkButton: {
 		alignSelf: 'center',
 		marginBottom: Metrics.screenHeight * 0.105
 	},
-	phoneTextInput: {
+	textInput: {
 		width:'100%',
 		paddingLeft:0,
 		fontSize: Metrics.screenWidth * 0.048,
 		fontFamily: Fonts.type.SFTextRegular
-	},
-	separatorStyle: {
-		position: 'absolute',
-		height: 16,
-		backgroundColor: '#CED4DA',
-		width:1
 	}
 });

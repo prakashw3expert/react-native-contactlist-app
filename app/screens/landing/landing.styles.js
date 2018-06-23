@@ -5,7 +5,6 @@ export default StyleSheet.create({
 	container: {
 		flex: 1,
 		justifyContent: 'center',
-    //paddingTop: Metrics.screenHeight * 0.11,
 		alignItems: 'center',
 		backgroundColor: '#fff',
 	},
@@ -24,7 +23,7 @@ export default StyleSheet.create({
     borderRadius: 4,
     justifyContent: 'center',
     alignSelf: 'center',
-		height: Metrics.screenHeight * 0.082
+		height: Metrics.screenHeight * 0.08
   },
 	txtContinue: {
 		color:'#fff',
